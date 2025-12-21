@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aero-fuel-calc';
+  sheetUrl = 'https://docs.google.com/spreadsheets/d/e/SEU_ID_AQUI/pubhtml?widget=true&headers=false';
 }

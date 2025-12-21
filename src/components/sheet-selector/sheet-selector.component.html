@@ -1,0 +1,32 @@
+<div class="selector-container">
+    <div class="selector-card">
+        <div class="header">
+            <h1>📊 Selecionar Google Sheet</h1>
+            <button class="logout-button" (click)="logout()">Sair</button>
+        </div>
+
+        <p>Insira o ID da Google Sheet que deseja visualizar</p>
+
+        <div class="info-box">
+            <strong>Como encontrar o ID:</strong><br>
+            No URL da sua folha:<br>
+            <code>https://docs.google.com/spreadsheets/d/<span class="highlight">SEU_ID_AQUI</span>/edit</code>
+        </div>
+
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="sheetId">ID da Google Sheet</label>
+                <input type="text" id="sheetId" [(ngModel)]="sheetId" name="sheetId" placeholder="Cole o ID aqui"
+                    required>
+            </div>
+
+            <div class="error-message" *ngIf="errorMessage">
+                {{ errorMessage }}
+            </div>
+
+            <button type="submit" class="submit-button">
+                Visualizar Sheet →
+            </button>
+        </form>
+    </div>
+</div>
