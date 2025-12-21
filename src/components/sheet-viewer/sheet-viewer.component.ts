@@ -12,7 +12,7 @@ export class SheetViewerComponent implements OnInit {
   sheetUrl: SafeResourceUrl = '';
   sheetId: string = '';
   firstSheetUrl: string = 'https://docs.google.com/spreadsheets/d/';
-  finalSheetUrl: string = '/edit?rm=embedded&header=false';
+  finalSheetUrl: string = '/edit?header=false&rm=minimal';
   // sheetUrl = '1ED2l02pgTubp1PX9eK6rkDHTG98lm0ST';
 
   constructor(
